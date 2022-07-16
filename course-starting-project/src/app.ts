@@ -1,8 +1,10 @@
-function add(n1: number, n2: number) {
-    return n1 + n2
+/// <reference path="./components/project-input.ts" />
+/// <reference path="./components/project-list.ts" />
+ 
+namespace App {
+
+const projectInput = new ProjectInput();
+const activeProjectList = new ProjectList('active');
+const finishProjectList = new ProjectList('finished');
+
 }
-
-const num1 = 5;
-const num2 = 10.3;
-
-console.log(add(num1, num2));
